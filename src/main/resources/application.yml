@@ -1,0 +1,9 @@
+server:
+  port: 8090
+
+encrypt:
+  key-store:
+    location: classpath:/jwt.jks
+    alias: mytest
+    password: 1qazxsw2
+    secret: 1qazxsw2
