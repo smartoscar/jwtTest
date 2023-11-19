@@ -55,6 +55,7 @@ public class Test {
     }
     public static void main(String[] args) throws Exception {
         SecretKey secretKey = generateAESKeyFromString(appSecret);
+
         String encrypt = encrypt(appKey + Base64.getEncoder().encodeToString(jsonStr.getBytes(StandardCharsets.UTF_8)), secretKey);
         System.out.println(encrypt);
         String decrypt = decrypt(encrypt, secretKey);
